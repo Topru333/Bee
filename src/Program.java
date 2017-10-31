@@ -40,7 +40,7 @@ public class Program {
 		// q2 * t = place where is second one
 		Double t1 = getTime(dis,q1,q2),t2;
 		while(true){
-			t2 = getTime(dis,getNext(),z); // время встречи с первым 
+			t2 = getTime(dis,getNext(),z); // time to reach next one
 			dis = (dis - getDistance(t2, q1)) - getDistance(t2, q2);
 			if(!(t1-t2>0&&dis>0&&t2>0.001)) {
 				System.out.println("stoped  t left " + t1);
